@@ -460,7 +460,122 @@ footer .contenido {
         flex-direction: column;
     }
 
+
+    /* Corrección global de scroll horizontal */
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
+            header {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0 20px;
+                text-align: center;
+            }
+
+            header h2 {
+                font-size: 2.5rem;
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+
+            .btn-agendar {
+                margin-top: 10px;
+            }
+        }
+
+        .galeria {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        #cuenta {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 10px 0;
+        }
+
+        .simply-section {
+            width: 70px !important;
+            height: 70px !important;
+            max-width: none;
+            max-height: none;
+            margin: 0;
+            padding: 4px;
+        }
+
+        .simply-amount {
+            font-size: 1.8rem;
+        }
+
+        .simply-word {
+            font-size: 0.9rem;
+        }
+
+        .rrss {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 10px;
+        }
+
+        .rrss h2 {
+            margin-bottom: 10px;
+        }
+
+        .rrss .block {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rrss iframe {
+            width: 100% !important;
+            max-width: 400px;
+            height: 352px !important;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .galeria img {
+            width: 100% !important;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .timeline .iconos-block img {
+            width: 50px !important;
+        }
+
+        .timeline .iconos-block p {
+            font-size: 0.95rem;
+        }
+
+        .details,
+        .timeline,
+        .rrss,
+        .dresscode {
+            width: 100% !important;
+        }
+
+        iframe {
+            width: 100% !important;
+        }
+
         body {
             padding: 0 10px;
         }
