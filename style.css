@@ -459,4 +459,80 @@ footer .contenido {
     .block .botones {
         flex-direction: column;
     }
+
+    @media (max-width: 768px) {
+        body {
+            padding: 0 10px;
+        }
+
+        header,
+        .details,
+        .rrss,
+        .dresscode,
+        .timeline {
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        header h2 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        .btn-agendar,
+        .boton,
+        .boton2,
+        .boton3 {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            box-sizing: border-box;
+        }
+
+        .galeria {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .galeria img,
+        .timeline img,
+        .details .img1 {
+            width: 100%;
+            height: auto !important;
+        }
+
+        .simply-section {
+            width: 30vw;
+            height: 30vw;
+            max-width: 80px;
+            max-height: 80px;
+        }
+
+        iframe {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .details p,
+        .rrss p,
+        .dresscode .info {
+            font-size: 1rem;
+            padding: 10px;
+            line-height: 1.4;
+        }
+
+        .rrss h2 {
+            font-size: 3rem;
+        }
+
+        .timeline .iconos,
+        .rrss .block .botones {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    }
 }
